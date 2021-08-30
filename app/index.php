@@ -15,10 +15,9 @@ $app = AppFactory::create();
 // Add error middleware
 $app->addErrorMiddleware(true, true, true);
 
-$app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("GET => Bienvenido!!! a SlimFramework");
+$app->get('[/]', function (Request $request, Response $response) {
+    $response->getBody()->write("GET => Bienvenido Gerónimo Bordone!!! a SlimFramework");
     return $response;
-
 });
 
 $app->run();
